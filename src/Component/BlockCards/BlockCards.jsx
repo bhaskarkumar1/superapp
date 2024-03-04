@@ -1,19 +1,8 @@
-import React,{useState} from "react"
+// import React,{useState} from "react"
 
 import styles from "./BlockCards.module.css"
-const BlockCards=({color,name, src})=>{
+const BlockCards=({handleClick,color,name, src})=>{
 
-    const[category,setCategory]=useState([])
-
-
-    const handleClick=(name)=>{
-        // console.log("blockcards clicked name: ",name )
-
-        setCategory((category)=>([...category,name]))
-        // console.log("category:",category)
-    }
-
-    console.log("category:",category)
 
     return(
         <>

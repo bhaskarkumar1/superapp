@@ -1,4 +1,4 @@
-
+import React,{useState} from "react";
 import styles from "./MoviesGenre.module.css";
 import { IoIosWarning } from "react-icons/io";
 import { IconContext } from "react-icons";
@@ -6,6 +6,20 @@ import BlockCards from "../BlockCards/BlockCards";
 
 import Data from "../../util/MoviesGenreData"
 const MoviesGenre = () => {
+
+
+  const[category,setCategory]=useState([])
+
+
+  const handleClick=(name)=>{
+      // console.log("blockcards clicked name: ",name )
+
+      setCategory((category)=>([...category,name]))
+      // console.log("category:",category)
+  }
+
+  console.log("category:",category)
+// what ever int the category you need to show  it in user choice 
 
   return (
     <>
@@ -23,7 +37,8 @@ const MoviesGenre = () => {
             </div>
 
             <div className={styles.userChoice}>
-                <div className={styles.userContainer}> userChoice</div>
+                <div className={styles.userContainer}> userChoice
+                </div>
 
 
             <span className={styles.error}>
@@ -44,7 +59,7 @@ const MoviesGenre = () => {
           {
             Data.map((obj)=>(
               // console.log(obj)
-              <BlockCards key={obj.id} name={obj.name} src={obj.src} color={obj.color}  />
+              <BlockCards setCategory={setCategory} handleClick={handleClick} key={obj.id} name={obj.name} src={obj.src} color={obj.color}  />
             ))
           }
       
