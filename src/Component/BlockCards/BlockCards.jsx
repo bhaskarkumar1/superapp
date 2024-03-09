@@ -10,7 +10,7 @@ const BlockCards=({handleClick,color,name, src})=>{
         <div onClick={()=>handleClick(name)} className={styles.container} style={{backgroundColor:color}}>
             <div className={styles.name}>  <h1>{name}</h1></div>
           
-            <div className={styles.image}><img src={`/genreImage/${src}.png`} alt="movies" /></div>
+            <div className={styles.image}><img src={`./genreImage/${src}.png`} alt="movies" /></div>
         </div>
      
         </>
