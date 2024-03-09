@@ -55,7 +55,7 @@ const Register = () => {
     }else{
       const pattern=/[a-zA-z]+[0-9]*[^#%&*()!+]{4,18}/
       if(pattern.test(data.username)===false){
-        setError((error)=>({...error,usernameErr:"User Name invalid "}))
+        setError((error)=>({...error,usernameErr:"User Name format: username[@][0-9]"}))
       }
       else {
         setError((error) => ({ ...error, usernameErr: "" }));
