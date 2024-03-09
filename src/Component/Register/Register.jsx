@@ -105,7 +105,17 @@ if(isChecked===false){
     handleError()
 
     localStorage.setItem("register", JSON.stringify(data));
+
+    // nameErr: "",
+    // usernameErr: "",
+    // emailErr: "",
+    // mobileErr: "",
+    // checkError:""
+
+    if(error.nameErr==="" && error.usernameErr==="" && error.emailErr==="" && error.mobileErr==="" && error.checkError=== "Really! You accepted it! I can't believe it! "){
       navigate("/genre");
+
+    }
 
 
 
