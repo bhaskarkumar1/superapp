@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import styles from "./Register.module.css";
+import { useNavigate } from 'react-router-dom';
+
 
 const Register = () => {
+  const navigate = useNavigate();
+
   const [data, setData] = useState({
     name: "",
     username: "",
     email: "",
-    phone: "",
+    // phone: "",
     mobile: "",
   });
 
@@ -27,6 +31,7 @@ const Register = () => {
     emailErr: "",
     mobileErr: "",
     checkError:""
+    // checkError:false 
   });
 
   const handleError=()=>{
@@ -98,9 +103,9 @@ if(isChecked===false){
     e.preventDefault();
     // console.log(data)
     handleError()
- 
 
-
+    localStorage.setItem("register", JSON.stringify(data));
+      navigate("/genre");
 
 
 

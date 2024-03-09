@@ -32,7 +32,7 @@
     font-size: 2rem;
 }
 .userChoice{
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     /* background-color: aliceblue; */
     display: flex;
@@ -40,7 +40,19 @@
 
 }
 .userContainer{
-    /* height: 18vh; */
+    height: 25vh;
+    /* background-color: #fff; */
+    /* display: flex; */
+}
+
+.userSelected{
+    background-color: #148A08;
+    outline: none;
+    color: #fff;
+    padding: 2%;
+    width: 29%;
+    border-radius: 15px;
+    margin: 1%;
 }
 
 .error{
@@ -135,6 +147,14 @@
         bottom: 10px;
         font-size: 1.2rem;
 
+    }
+
+    .userChoice{
+        height: 27vh;
+    
+    }
+    .error{
+    margin:0 2% ;
     }
 }
 
