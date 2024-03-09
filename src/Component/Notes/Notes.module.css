@@ -27,11 +27,14 @@ textarea:focus {
 @media screen and (max-width:676px) {
     .container{
         width: 80%;
+        margin:5% 0;
+
     }
 }
 @media screen and (min-width:767px) and (max-width:1024px) {
     .container{
         width: 40%;
+        height: 59vh;
     }
     .textArea textarea{
         width: 40vh;

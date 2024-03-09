@@ -45,11 +45,27 @@
     .left{
         width: 100%;
     }
+
+    .browse{
+        width: 20%;
+        background-color: #72DB73;
+        color: #fff;
+        padding: 2%;
+        font-size: 1rem;
+        position:fixed;
+        bottom: 10px;
+       
+    }    
 }
 
 
 @media screen and (min-width:676px) and (max-width:1024px){
     .container{
         height: 150vh;
+    }
+    .browse{
+        bottom: 2px;
+        right: 50px;
+        padding: 0.2%;
     }
 }

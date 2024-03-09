@@ -56,7 +56,9 @@
 @media screen and (min-width:676px) and (max-width:1024px){
     .container{
         width: 57%;
-        position: static;
+        /* position: static; */
+        top: 3%;
+        left: 1%;
 
     }
 }

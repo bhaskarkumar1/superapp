@@ -46,6 +46,8 @@
 @media screen and (max-width:676px){
     .container{
         width: 80%;
+        margin:5% 0;
+
     }
     /* .bottom{
 
