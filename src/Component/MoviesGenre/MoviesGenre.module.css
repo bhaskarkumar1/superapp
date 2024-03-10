@@ -92,10 +92,10 @@
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:676px) {
     .container{
         display: block;
-        height: 150vh;
+        height: 210vh;
 
     }
     .leftContainer{
@@ -142,9 +142,10 @@
         width: 60%;
         padding: 2%;
         border-radius: 30px;
-        position: relative;
+        /* position: relative; */
+        position: fixed;
         left:22% ;
-        bottom: 10px;
+        bottom: 50%;
         font-size: 1.2rem;
 
     }
