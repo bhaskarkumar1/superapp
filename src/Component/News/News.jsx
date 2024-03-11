@@ -13,7 +13,7 @@ const [news,setNews]=useState([])
 
     console.log(res)
     setNews(()=>res)
-        return res
+        // return res
     }
 //     data()
     useEffect(()=>{
@@ -31,7 +31,7 @@ const [news,setNews]=useState([])
         <div  onClick={openUrl} className={styles.container}>
             <div className={styles.top}>
                 <div className={styles.img} >
-                    <img src={news.urlToImage} alt="Looks like News apis 100 limit crossed today"  />
+                    <img src={news.image} alt="Looks like News apis 100 limit crossed today"  />
                 </div>
                 <div className={styles.title}>
                     <h3>{news.title}</h3>
@@ -39,7 +39,7 @@ const [news,setNews]=useState([])
             
             </div>
             <div className={styles.bottom}>
-                <h4>{news.description}</h4>
+                <h4>{news.text?.substring(0,200)}</h4>
 
             </div>
             
