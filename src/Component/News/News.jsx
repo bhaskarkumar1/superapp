@@ -39,7 +39,7 @@ const [news,setNews]=useState([])
             
             </div>
             <div className={styles.bottom}>
-                <h4>{news.text?.substring(0,200)}</h4>
+                <h4>{news.description?.substring(0,200)}</h4>
 
             </div>
             
